@@ -70,7 +70,7 @@
 }
 .intro {
     width: 50%;
-    padding: 0px 30px 30px 30px;
+    padding: 50px 30px 30px 30px;
 }
 .intro h1.bold {
     font-weight: 400;
@@ -92,12 +92,10 @@
         flex-direction: column;
         text-align: center;
     }
-
     .intro, .pp {
         width: 100%;
         padding: 0;
     }
-
     .landing-page img {
         height: 300px;
     }
@@ -108,6 +106,7 @@
     margin: 30px;
     color: #F5E8C7;
     font-family: 'Gotham';
+    margin-top: 80px;
 }
 .content {
     display: flex;
@@ -115,12 +114,12 @@
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
 }
 .desc {
     flex: 1;
-    padding-right: 20px;
-    margin-top: 80px;
+    padding-right: 80px;
+    margin: 50px;
 }
 .desc-info {
     display: flex;
@@ -137,8 +136,6 @@
     margin-bottom: 20px;
 }
 .desc p {
-    flex-wrap: wrap;
-    word-wrap: break-word;
     text-align: justify;
     font-weight: 350;
     font-family: 'Gotham' !important;
@@ -156,6 +153,7 @@
     opacity: 0.9;
     font-style: italic;
     font-weight: lighter;
+    font-family: 'Gotham' !important;
 } 
 .section .card a {
     color: #F5E8C7;
@@ -166,16 +164,13 @@
         flex-direction: column;
         align-items: center;
     }
-
     .desc {
         padding-right: 0;
         text-align: center;
     }
-
     .desc-info {
         margin-top: 20px;
     }
-
     .desc-info img {
         height: 300px;
     }
@@ -280,27 +275,55 @@
 
 /* CONTACT */
 .contact {
-    align-items: center;
-    justify-content: center;
     display: flex;
-}
-.contact .table {
-    text-align: justify;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 100px;
+}
+.contact-table {
     width: 50%;
-}
-.contact .table td {
-    padding: 30px;
+    max-width: 800px;
     color: #F5E8C7;
-    border: solid #F5E8C7 0.3px;
+    text-align: left;
+    border-collapse: collapse;
 }
-.contact .table a {
+.contact-header {
+    text-align: center;
+    padding: 30px 30px 20px 30px;
+    border: 1px solid #F5E8C7;
+}
+.contact-item {
+    padding: 20px;
+    border: 1px solid #F5E8C7;
+}
+.contact-item h5 {
+    display: flex;
+    align-items: center;
+}
+.contact-item img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+.contact-item a {
     text-decoration: none;
     color: #F5E8C7;
     font-family: 'Gotham' !important;
 }
-.contact .table img {
-    width: 30px; 
-    height: auto;
+.contact-item a:hover {
+    color: #BBE1FA !important;
+    text-decoration: none !important;
+}
+@media (max-width: 768px) {
+    .contact-table {
+        width: 80%;
+    }
+    .contact-item {
+        display: block;
+        width: 100%;
+    }
+    .contact-table tr {
+        display: flex;
+        flex-direction: column;
+    }
 }
