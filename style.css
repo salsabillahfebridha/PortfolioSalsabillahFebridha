@@ -235,6 +235,7 @@
 .project td {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 .project .card {
     width: 100%;
