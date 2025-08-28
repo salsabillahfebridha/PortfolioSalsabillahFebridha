@@ -194,7 +194,13 @@
     opacity: 0.9;
     font-style: italic;
     font-weight: lighter;
-} 
+}
+.container .card a {
+    color: #F5E8C7;
+    opacity: 0.9;
+    text-decoration: underline;
+    font-family: 'Gotham' !important;
+}
 .container .card ul li {
     margin-left: 50px;
     font-family: 'Gotham' !important;
