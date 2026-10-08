@@ -2,70 +2,1063 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sals's Portfolio</title>
+    <meta name="description" content="Portfolio of Salsabillah Febridha — UI/UX designer based in Jakarta. Information Systems graduate, UPN &quot;Veteran&quot; Jakarta. Product design, design systems and usability testing.">
+    <meta name="author" content="Salsabillah Febridha">
     <link rel="shortcut icon" href="img/assets/logo.png">
-    <title>Sals</title>
+    <meta property="og:title" content="Salsabillah Febridha - UI/UX Designer">
+    <meta property="og:description" content="I design digital products, end-to-end interfaces, design systems, and the usability testing that validates them.">
+    <meta property="og:image" content="img/project/move.png">
+    <meta property="og:type" content="website">
 
-    <!-- FONT -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-    <!-- BOOTSTRAP CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="" onclick="event.preventDefault(); location.reload(); window.scrollTo(0, 0);"><img src="img/assets/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="experience.html">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="skill.html">Skill</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="project.html">Project</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                </ul>
-            </div>
-        </div>
+
+<div class="progress" aria-hidden="true"></div>
+
+<!-- NAVBAR -->
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span>Salsabillah Febridha<small>UI/UX Designer</small></span>
+    </a>
+
+    <nav class="nav-links" data-spy aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
-    
-    <!-- LANDING PAGE -->
-    <div class="landing-page">
-        <div class="content">
-            <div class="intro">
-                <h2>Hello!</h2>
-                <h1 class="bold">I am Salsabillah Febridha</h1>
-                <h5 class="light">Final Year Information Systems Student</h5>
-                <p class="light">I have a strong interest in UI/UX Design, Quality Assurance, Data Analytics, Web Development, System Analysis, and Business Analysis.</p>
-                <a href="about.html"><button type="button" class="btn btn-outline-light">More about me &#8594;</button></a>
-            </div>
-            <div class="pp">
-                <img src="img/pict/profil.jpg" alt="profile">
-            </div>
-        </div>
+
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-sm" href="https://drive.google.com/file/d/16JOFE5HZ2lzmVR8SWRfONYaqwprfAqOv/view?usp=sharing" target="_blank" rel="noopener">Curriculum Vitae</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
     </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+
+      <div>
+
+        <h1 class="display" data-reveal>
+          Making complex ideas feel <em>simple</em>
+        </h1>
+
+        <p class="lede" data-reveal style="margin-top:1.6rem">
+            I'm <strong style="color:var(--cream)">Salsabillah Febridha</strong>, a UI/UX designer and Information Systems graduate. 
+            I've designed web, enterprise, and creator platforms, tested them with real users, and helped build 
+            design systems in Figma. I also have a QA and front-end background, so I work comfortably with developers.
+        </p>
+
+        <p class="mono muted" data-reveal style="margin-top:1.4rem">
+          What I do →
+          <span class="rotator" data-rotator style="color:var(--pink)">
+            <span>Product &amp; interface design</span>
+            <span>Design systems</span>
+            <span>Usability testing</span>
+            <span>User research</span>
+          </span>
+        </p>
+
+        <div class="hero-actions" data-reveal>
+          <a class="btn btn-primary" href="#projects" data-magnetic>View my project</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <figure class="hero-portrait" data-reveal>
+        <img src="img/pict/profil.jpg" alt="Salsabillah Febridha" width="380" height="475">
+        <figcaption class="portrait-badge">
+          <strong><span data-count="3.94" data-decimals="2">3.94</span></strong>
+          <small>GPA / 4.00</small>
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <dl class="stats" data-reveal>
+      <div class="stat">
+        <b><span data-count="8" data-suffix="+">8+</span></b>
+        <span>product releases designed at Paragon (20+ pages)</span>
+      </div>
+      <div class="stat">
+        <b><span data-count="150" data-suffix="+">150+</span></b>
+        <span>colour tokens in a design system I helped build and document</span>
+      </div>
+      <div class="stat">
+        <b><span data-count="10" data-suffix="+">10+</span></b>
+        <span>usability testing sessions with internal and external users</span>
+      </div>
+      <div class="stat">
+        <b><span data-count="5">5</span></b>
+        <span>national and international UI/UX competition</span>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <ul class="marquee-track">
+    <li>User Research</li><li>Wireframing</li><li>Prototyping</li><li>Design Systems</li>
+    <li>Usability Testing</li><li>Design Tokens</li><li>Interaction Design</li>
+    <li>Design Consistency</li><li>UAT</li><li>Manual QA</li><li>Figma</li>
+    <li>User Research</li><li>Wireframing</li><li>Prototyping</li><li>Design Systems</li>
+    <li>Usability Testing</li><li>Design Tokens</li><li>Interaction Design</li>
+    <li>Design Consistency</li><li>UAT</li><li>Manual QA</li><li>Figma</li>
+  </ul>
+</div>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div data-reveal>
+        <p class="eyebrow">Projects</p>
+        <h2 class="h2">Things I've designed and built</h2>
+      </div>
+    </div>
+
+    <div class="filters" data-filters role="group" aria-label="Filter projects">
+      <button class="filter is-on" data-filter="all"  aria-pressed="true">All work <b>16</b></button>
+      <button class="filter"       data-filter="uiux" aria-pressed="false">UI/UX Design <b>08</b></button>
+      <button class="filter"       data-filter="web"  aria-pressed="false">Web Development <b>03</b></button>
+      <button class="filter"       data-filter="data" aria-pressed="false">Data &amp; System Analyst<b>05</b></button>
+    </div>
+
+    <div class="work-grid" data-work-grid>
+      <!-- GRO -->
+      <article class="card" data-cat="uiux" data-reveal>
+        <div class="card-media">
+          <img src="img/project/gro.png" alt="Gro Creator Site" loading="lazy">
+          <span class="card-year">2026</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="chip" data-cat="uiux">UI/UX Design</span>
+            <span class="chip">Internship</span>
+          </div>
+          <h3>Gro Creator, Admin, &amp; Agency Site</h3>
+          <p>This project was completed during my internship at PT Paragon Technology and Innovation. I worked on 
+            Gro's creator site, along with its admin and agency portals, designing user flows and high-fidelity 
+            prototypes for several product releases. I also ran usability tests, analyzed where users dropped off, 
+            and helped build the design system used for all Paragon products. The goal was to make the platform easier 
+            to use and keep the design consistent across portals.</p>
+          <div class="card-meta">
+            <p><b>Role:</b> UI/UX Designer</p>
+            <p><b>Stack:</b> Figma · Claude Design · Lark</p>
+          </div>
+          <div class="card-links">
+            <!-- <a class="btn btn-primary btn-sm stretch" href="case/gro-creator-site.html">Case study</a> -->
+            <a class="btn btn-ghost btn-sm" href="https://grocreator.com/" target="_blank" rel="noopener">Live site</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- UKIRAMA -->
+      <article class="card" data-cat="uiux" data-reveal>
+        <div class="card-media">
+          <img src="img/project/UkiramaSite.png" alt="Ukirama website redesign" loading="lazy">
+          <span class="card-year">2025</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="chip" data-cat="uiux">UI/UX Design</span>
+            <span class="chip">Internship</span>
+          </div>
+          <h3>Ukirama Site &amp; ERP</h3>
+          <p>This project was completed during my internship at PT Ukirama Solusi Indonesia. I contributed to the improvement 
+            of the company's website by designing and implementing several new pages and sections. I also designed two feature modules for the ERP product. 
+            The goal was to enhance user experience, improve clarity of product offerings, and create a more professional and engaging digital presence.</p>
+          <div class="card-meta">
+            <p><b>Role: </b>UI/UX Designer</p>
+            <p><b>Stack: </b>Figma · Notion · Attention Insight</p>
+          </div>
+          <div class="card-links">
+            <!-- <a class="btn btn-primary btn-sm stretch" href="case/ukirama-site.html">Case study</a> -->
+            <a class="btn btn-ghost btn-sm" href="https://ukirama.com/" target="_blank" rel="noopener">Live site</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- MOVE -->
+      <article class="card" data-cat="uiux" data-reveal>
+        <div class="card-media">
+          <img src="img/project/move.png" alt="MOVE urban mobility app" loading="lazy">
+          <span class="card-year">2024</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="chip" data-cat="uiux">UI/UX Design</span>
+            <span class="chip">International Competition</span>
+          </div>
+          <h3>MOVE</h3>
+          <p>This group project was created for the international competition VWO 2024, and 
+            successfully won Best Mobile App Design. "MOVE" aims to revolutionize urban transportation 
+            by enabling journey planning across public transport modes, carbon emissions tracking, 
+            electric scooter rentals, electronic card integration, and real-time air quality and weather updates.</p>
+          <div class="card-meta">
+            <p><b>Role:</b> UI/UX Designer</p>
+            <p><b>Stack:</b> Figma · Canva · Maze</p>
+          </div>
+          <div class="card-links">
+            <!-- <a class="btn btn-primary btn-sm stretch" href="case/move.html">Case study</a> -->
+            <a class="btn btn-ghost btn-sm" href="https://bit.ly/MovePrototype-VWO-UIUX" target="_blank" rel="noopener">Prototype</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- NOBARIN -->
+      <article class="card" data-cat="uiux" data-reveal>
+        <div class="card-media">
+          <img src="img/project/nobarin.png" alt="Nobarin streaming app" loading="lazy">
+          <span class="card-year">2024</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="chip" data-cat="uiux">UI/UX Design</span>
+            <span class="chip">National Competition</span>
+          </div>
+          <h3>Nobarin</h3>
+          <p>This group project was created for the national competition Mobile UI/UX Competition (MUC) 2024, 
+            and successfully won 2nd place. "Nobarin" is a VOD-based application equipped with various features 
+            to enhance the user experience. The goal of this application is to provide a movie-watching platform 
+            that is easy to access and manage, affordable, and legal.</p>
+          <div class="card-meta">
+            <p><b>Role:</b> UI/UX Designer</p>
+            <p><b>Stack:</b> Figma · Canva</p>
+          </div>
+          <div class="card-links">
+            <!-- <a class="btn btn-primary btn-sm stretch" href="case/nobarin.html">Case study</a> -->
+            <a class="btn btn-ghost btn-sm" href="https://www.figma.com/proto/btueTsL7gaI8zIKQGbrSNr/UI-Design-Nobarin?page-id=384%3A3603&type=design&node-id=384-3603&viewport=-64%2C728%2C0.08&t=TBPc0LWTmgfHTPak-1&scaling=scale-down&starting-point-node-id=768%3A14429&mode=design" target="_blank" rel="noopener">Prototype</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- JELAJAH -->
+      <article class="card" data-cat="uiux" data-reveal>
+        <div class="card-media">
+          <img src="img/project/jelajah.png" alt="Jelajah cultural tourism app" loading="lazy">
+          <span class="card-year">2024</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="chip" data-cat="uiux">UI/UX Design</span>
+            <span class="chip">National Competition</span>
+          </div>
+          <h3>Jelajah</h3>
+          <p>This group project was created for the national competition Technotainment 2024, 
+            and successfully reached the finals. "Jelajah" is an application designed to preserve 
+            Indonesia's rich cultural heritage by allowing users to explore numerous cultural 
+            tourism destinations. With Augmented Reality (AR), the app enhances the user experience, 
+            offering immersive cultural exploration.</p>
+          <div class="card-meta">
+            <p><b>Role:</b> UI/UX Designer</p>
+            <p><b>Stack:</b> Figma · Canva</p>
+          </div>
+          <div class="card-links">
+            <!-- <a class="btn btn-primary btn-sm stretch" href="case/jelajah.html">Case study</a> -->
+            <a class="btn btn-ghost btn-sm" href="https://www.figma.com/proto/OZErZuZaRHK9vq2usmYcpe/LOMBA-YUK?node-id=188-4638&node-type=frame&viewport=1745%2C1941%2C0.32&t=riK2FynLIOgDdpCj-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=188%3A4637&show-proto-sidebar=1" target="_blank" rel="noopener">Prototype</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- SELARAS -->
+      <article class="card" data-cat="uiux" data-reveal>
+        <div class="card-media">
+          <img src="img/project/selaras.png" alt="Selaras mental health app" loading="lazy">
+          <span class="card-year">2024</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="chip" data-cat="uiux">UI/UX Design</span>
+            <span class="chip">National competition</span>
+          </div>
+          <h3>Selaras</h3>
+            <p>This group project was created for the national competition Techcomfest 2025. 
+              "Selaras" is a mental health application, offering a safe digital space for users 
+              to express emotions and enhance well-being. Featuring self-journaling, emotion tracking, 
+              AI conversations, professional consultations, and lifestyle tracking, the app empowers 
+              users to adopt healthier routines in a judgment-free environment.</p>
+          <div class="card-meta">
+            <p><b>Role:</b> UI/UX Designer</p>
+            <p><b>Stack:</b> Figma · Canva · Maze</p>
+          </div>
+          <div class="card-links">
+            <!-- <a class="btn btn-primary btn-sm stretch" href="case/selaras.html">Case study</a> -->
+            <a class="btn btn-ghost btn-sm" href="https://www.figma.com/proto/NCeZkTBMhQbTW0iqHAX4Bu/UI-UX-TECHCOMFEST-2025?node-id=29-752&p=f&t=rQwuPziXoZcg8zWn-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=110%3A2904&show-proto-sidebar=1" target="_blank" rel="noopener">Prototype</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PAW LINK -->
+      <article class="card" data-cat="uiux" data-reveal>
+        <div class="card-media">
+          <img src="img/project/pawlink.png" alt="Paw Link pet monitoring app" loading="lazy">
+          <span class="card-year">2024</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="chip" data-cat="uiux">UI/UX Design</span>
+            <span class="chip">National Competition</span>
+          </div>
+          <h3>Paw Link</h3>
+          <p>This group project was created for the national competition INSPACE 2024. "Paw Link" is a pet connectivity 
+            and monitoring app integrated with a pet collar. The goal of this application is to help users better understand 
+            and meet the needs of their pets through an intuitive UI and engaging features, combined with technologies such 
+            as IoT (Internet of Things) and AI (Artificial Intelligence).</p>
+          <div class="card-meta">
+            <p><b>Role:</b> UI/UX Designer</p>
+            <p><b>Stack:</b> Figma</p>
+          </div>
+          <div class="card-links">
+            <!-- <a class="btn btn-primary btn-sm stretch" href="case/pawlink.html">Case study</a> -->
+            <a class="btn btn-ghost btn-sm" href="https://www.figma.com/proto/MGFBldzy355lJUBWyQqmoV/UI%2FUX-Design-(PawLink)?page-id=0%3A1&node-id=9-4&viewport=916%2C592%2C0.53&t=CScPlVzPvOM708xh-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=9%3A4&show-proto-sidebar=1" target="_blank" rel="noopener">Prototype</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- NOTES -->
+      <article class="card" data-cat="uiux" data-reveal>
+        <div class="card-media">
+          <img src="img/project/notes.png" alt="Notes planner app" loading="lazy">
+          <span class="card-year">2023</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="chip" data-cat="uiux">UX Research</span>
+            <span class="chip">Group Project</span>
+          </div>
+          <h3>Notes</h3>
+          <p>This group project was created as the final project for the UI/UX Basic Study Club of KSM Android. 
+            The idea for this application came from many friends who were struggling to manage their tasks. 
+            "Notes" is an application that functions like a book, binder, or daily planner. The goal of this application 
+            is to help users organize various tasks so that nothing is missed.</p>
+          <div class="card-meta">
+            <p><b>Role:</b> UX Researcher</p>
+            <p><b>Stack:</b> Figma · Canva · Draw.io</p>
+          </div>
+          <div class="card-links">
+            <!-- <a class="btn btn-primary btn-sm stretch" href="case/notes.html">Case study</a> -->
+            <a class="btn btn-ghost btn-sm" href="https://drive.google.com/file/d/1ibgW7PFTj3pY5kyRohMhrGw5q6l3epYT/view?usp=sharing" target="_blank" rel="noopener">Proposal</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- SINJAM -->
+      <article class="card is-third" data-cat="web" data-reveal>
+        <div class="card-media">
+          <img src="img/project/sinjamUPNVJ.png" alt="SINJAM facility loan system" loading="lazy">
+          <span class="card-year">2024</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags is-third">
+            <span class="chip" data-cat="web">Web Development</span>
+            <span class="chip">Group Project</span>
+          </div>
+          <h4>SINJAM</h4>
+          <p>This website allows UPN 'Veteran' Jakarta students to view various available facilities, submit facility 
+            loan requests online, monitor the status of their requests, and receive notifications about their loan 
+            applications. The goal of this website is to streamline the facility loan process to prevent 
+            scheduling conflicts.</p>
+          <div class="card-meta">
+            <p style="font-size:12px"><b>Role:</b> Full-stack Developer</p>
+            <p style="font-size:12px"><b>Stack:</b> HTML · CSS · PHP · MySQL · JS</p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-ghost btn-sm" href="https://github.com/dianingtass/TBWebP_SINJAM" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost btn-sm" href="https://drive.google.com/file/d/1m0l5KhUa05n_ecrJ73acoqe5YsmKNuK2/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sistem Peminatan FIK -->
+      <article class="card is-third" data-cat="web" data-reveal>
+        <div class="card-media">
+          <img src="img/project/peminatanFIK.png" alt="Sistem Peminatan FIK" loading="lazy">
+          <span class="card-year">2024</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags is-third">
+            <span class="chip" data-cat="web">Web Development</span>
+            <span class="chip">Self Project</span>
+          </div>
+          <h4>Sistem Peminatan FIK</h4>
+          <p>This website allows FIK UPN “Veteran” Jakarta students to select their 
+            preferred specialization. Each department offers three specialization options 
+            for students to choose from. The system was designed to help the faculty 
+            efficiently record, manage, and organize students’ specialization choices.</p>
+          <div class="card-meta">
+            <p style="font-size:12px"><b>Role:</b> Front-end Developer</p>
+            <p style="font-size:12px"><b>Stack:</b> HTML · CSS · JS</p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-ghost btn-sm" href="https://github.com/salsabillahfebridha/SistemPeminatanKeahlian" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Movie Mingle -->
+      <article class="card is-third" data-cat="web" data-reveal>
+        <div class="card-media">
+          <img src="img/project/movieMingle.png" alt="Movie Mingle" loading="lazy">
+          <span class="card-year">2023</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags is-third">
+            <span class="chip" data-cat="web">Web Development</span>
+             <span class="chip">Self Project</span>
+          </div>
+          <h4>Movie Mingle</h4>
+          <p>This website provides users with detailed information about films, including titles, synopses, release dates, 
+            and ratings. Built using the React.js framework, the website retrieves film data from the public TMDB API. 
+            The project aims to make it easier for users to discover and access comprehensive information about films.</p>
+          <div class="card-meta">
+            <p style="font-size:12px"><b>Role:</b> Front-end Developer</p>
+            <p style="font-size:12px"><b>Stack:</b> HTML · CSS · React.js · TMDB API</p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-ghost btn-sm" href="https://github.com/salsabillahfebridha/MovieMingle" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Movie and TV Show Recommendation -->
+      <article class="card is-third" data-cat="data" data-reveal>
+        <div class="card-media">
+          <img src="img/project/recommendation-system.png" alt="Recommendation system" loading="lazy">
+          <span class="card-year">2024</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags is-third">
+            <span class="chip" data-cat="data">Data Science</span>
+            <span class="chip">Group Project</span>
+          </div>
+          <h4>Movie &amp; TV Recommender</h4>
+          <p>The recommendation system was developed using a content-based filtering approach with data sourced from Kaggle. 
+            Through data cleaning, visual exploration, and modeling using TF-IDF Vectorizer and Cosine Similarity, 
+            the system achieved an accuracy of up to 80%.</p>
+          <div class="card-meta">
+            <p style="font-size:12px"><b>Role:</b> Data Scientist</p>
+            <p style="font-size:12px"><b>Stack:</b> Google Colab · Python · Anaconda · Streamlit · Github</p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-ghost btn-sm" href="https://movie-tvshow-system-recommendation.streamlit.app/" target="_blank" rel="noopener">Live app</a>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/salsabillahfebridha/Movie-System-Recommendation" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost btn-sm" href="https://drive.google.com/file/d/1d77mAnjN_CoIB4lYiOjDkWIyVRg8e5YU/view?usp=sharing" target="_blank" rel="noopener">Deck</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Laptop Price Prediction -->
+      <article class="card is-third" data-cat="data" data-reveal>
+        <div class="card-media">
+          <img src="img/project/correlationMatrixLaptop.png" alt="Laptop price correlation matrix" loading="lazy">
+          <span class="card-year">2024</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags is-third">
+            <span class="chip" data-cat="data">Data Science</span>
+            <span class="chip">Group Project</span>
+          </div>
+          <h4>Laptop Price Prediction</h4>
+          <p>This project focuses on predicting laptop prices based on key specifications. The dataset was sourced from Kaggle,
+            and the result shows that linear regression effectively captures the relationship between laptop specifications and 
+            pricing with minimal error and provides a better fit compared to the decision tree.</p>
+          <div class="card-meta">
+            <p style="font-size:12px"><b>Role:</b> Data Scientist</p>
+            <p style="font-size:12px"><b>Stack:</b> Google Colab · Python</p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-ghost btn-sm" href="https://colab.research.google.com/drive/1bHKZaB9D2sYbWncVTdQJz4YqQPQfkDKE?usp=sharing" target="_blank" rel="noopener">Notebook</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Mental Health in Southeast Asia -->
+      <article class="card is-third" data-cat="data" data-reveal>
+        <div class="card-media">
+          <img src="img/project/correlationMatrixMental.png" alt="Mental health correlation matrix" loading="lazy">
+          <span class="card-year">2024</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags is-third">
+            <span class="chip" data-cat="data">Data Science</span>
+            <span class="chip">Group Project</span>
+          </div>
+          <h4>Analysis of Mental Health Disorder</h4>
+          <p>This project analyzes The Devastator dataset from Kaggle to explore mental health trends across Southeast Asia. 
+            The analysis aims to identify patterns in the prevalence of various mental disorders and examine potential 
+            relationships between them using linear regression models and Pearson correlation.</p>
+          <div class="card-meta">
+            <p style="font-size:12px"><b>Role:</b> Data Scientist</p>
+            <p style="font-size:12px"><b>Stack:</b> Google Colab · Python</p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-ghost btn-sm" href="https://colab.research.google.com/drive/1rRC5X1ci1q0hZUcPlNsI8tPmbPR5FX_a?usp=sharing" target="_blank" rel="noopener">Notebook</a>
+            <a class="btn btn-ghost btn-sm" href="https://drive.google.com/file/d/1qre1mmx16TVLGfqSS7IGLGfgfTeZ5hr2/view?usp=sharing" target="_blank" rel="noopener">Deck</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Dignition LMS -->
+      <article class="card is-third" data-cat="data" data-reveal>
+        <div class="card-media">
+          <img src="img/project/dignition.png" alt="Dignition LMS" loading="lazy">
+          <span class="card-year">2023</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags is-third">
+            <span class="chip" data-cat="data">System Analysis</span>
+            <span class="chip">Group Project</span>
+          </div>
+          <h4>Dignition LMS</h4>
+          <p>This  Learning Management System (LMS) was developed for use by the KSM Android Study Club. As system 
+            analysts, I took several steps to ensure the system meets the users' needs. These steps included conducting 
+            interviews, creating information architecture, narratives, activity diagram, sequence diagrams, and an ERD.</p>
+          <div class="card-meta">
+            <p style="font-size:12px"><b>Role:</b> System Analyst</p>
+            <p style="font-size:12px"><b>Stack:</b> Draw.io · Figma · Spreadsheet</p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-ghost btn-sm" href="https://drive.google.com/file/d/1quxPskdptmzoMN-qKB52OOGbzE_G8jfv/view?usp=sharing" target="_blank" rel="noopener">Documentation</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Grand Moon Hotel IS -->
+      <article class="card is-third" data-cat="data" data-reveal>
+        <div class="card-media">
+          <img src="img/project/dfd.png" alt="Grand Moon Hotel data flow diagram" loading="lazy">
+          <span class="card-year">2023</span>
+        </div>
+        <div class="card-body">
+          <div class="card-tags is-third">
+            <span class="chip" data-cat="data">System Analysis</span>
+            <span class="chip">Group Project</span>
+          </div>
+          <h4>Grand Moon Hotel IS</h4>
+          <p>This project involved designing an information system for “Grand Moon Hotel,” a fictional hotel. 
+            The design process began with analyzing business processes using the PIECES method, followed by 
+            applying an Agile development methodology, mapping data flows and database structure, 
+            and designing the user interface.</p>
+          <div class="card-meta">
+            <p style="font-size:12px"><b>Role:</b> System Analyst</p>
+            <p style="font-size:12px"><b>Stack:</b> Draw.io · Figma</p>
+          </div>
+          <div class="card-links">
+            <a class="btn btn-ghost btn-sm" href="https://drive.google.com/file/d/1ShGN38A6G8OqqOgVtd5ZJO4WgaKZMsr0/view?usp=sharing" target="_blank" rel="noopener">Proposal</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div data-reveal>
+        <p class="eyebrow">About</p>
+        <h2 class="h2">A little more about me and how I work</h2>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <figure class="about-photo" data-reveal>
+        <img src="img/pict/about.jpg" alt="Salsabillah Febridha" loading="lazy">
+        <figcaption>
+          <strong>Salsabillah Febridha</strong>
+        </figcaption>
+      </figure>
+
+      <div class="about-body" data-reveal>
+        <p>I'm a UI/UX designer and Information Systems graduate with hands-on experience designing digital 
+          products. During my internships at Ukirama and Paragon, I worked on company websites, ERP modules, 
+          and admin, agency, and creator portals. My work spans designing, prototyping, and usability testing. 
+          Outside of internships, I've won Best Mobile App Design at VWO 2024 and placed in other national 
+          UI/UX competitions.</p>
+
+        <p>I also work on design systems. At Paragon, I helped build a Figma design system with 150+ color 
+          tokens and 100+ variables, and worked with the engineering team on documentation that makes the 
+          design system easier to use in development. At Ukirama, I audited the website's UI 
+          components and colors, then worked with the team to decide which elements to keep and standardize.</p>
+
+        <p>Before and alongside design, I did QA testing, learned front-end development, and worked 
+          with data. That helps me design things developers can build and spot problems early. I 
+          also led the academic division of a student Android study club and helped organize faculty 
+          events, so I'm used to working in a team and meeting deadlines.</p>
+
+        <dl class="factlist">
+          <div>
+            <dt>Education</dt>
+            <dd>Bachelor of Information Systems, Faculty of Computer Science<br>
+              <span class="muted">UPN "Veteran" Jakarta · Aug 2022 – Jul 2026 · GPA 3.94 / 4.00</span></dd>
+            <dt></dt>
+            <dd>SMAN 2 Tangerang, Mathematics &amp; Natural Science<br>
+              <span class="muted">Jul 2018 – Jun 2021 · Final score 92.64</span></dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd>UI/UX Design<br>
+              <span class="muted">Supported by Quality Assurance · Front-End · Data &amp; System Analysis</span></dd>
+          </div>
+          <div>
+            <dt>Languages</dt>
+            <dd>Indonesian (Native) · English (Professional Working Proficiency)</dd>
+          </div>
+        </dl>
+
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://drive.google.com/file/d/16JOFE5HZ2lzmVR8SWRfONYaqwprfAqOv/view?usp=sharing" target="_blank" rel="noopener">Curriculum Vitae</a>
+          <a class="btn btn-ghost" href="#projects" data-magnetic>View my project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <div data-reveal>
+        <p class="eyebrow">Experience</p>
+        <h2 class="h2">Where I've worked and what I've led</h2>
+      </div>
+      <div class="tabs" data-tabs role="tablist" data-reveal>
+        <button class="filter is-on" data-tab="work" role="tab" aria-selected="true">Professional</button>
+        <button class="filter" data-tab="org" role="tab" aria-selected="false">Organisational</button>
+      </div>
+    </div>
+
+    <!-- PROFESSIONAL -->
+    <div class="timeline" data-panel="work">
+
+      <article class="tl-item" data-reveal>
+        <div class="tl-head">
+          <h3>UI/UX Designer Intern</h3>
+          <span class="tl-when">April - September 2026</span>
+        </div>
+        <p class="tl-org">PT. Paragon Technology and Innovation</p>
+        <ul>
+          <li>Led end-to-end UI/UX design for 8+ product releases (20+ pages) across the Gro’s admin, agency, and creator
+            portals, turning business requirements into intuitive, consistent user flows, and high-fidelity prototypes.</li>
+          <li>Planned and conducted 10+ usability testing sessions with internal stakeholders and external users, translating
+            findings into actionable insights and design iterations before handoff.</li>
+          <li>Contributed to building a scalable design system in Figma, establishing 150+ color tokens and 100+ variables to
+            improve visual consistency, streamline designer-developer handoff, and speed up future design work.</li>
+          <li>Analyzed user behavior for two core Gro creator site flows, building funnel and pathway analyses to find drop-offs,
+            and led design discussions to determine whether UI/UX was the cause and which improvements to prioritize.</li>
+          <li>Built an AI-ready design system foundation with the engineering team, creating a structured Markdown (.md)
+            documentation file and a design system library so vibe coding stays aligned with the UI/UX design system.</li>
+        </ul>
+      </article>
+
+      <article class="tl-item" data-reveal>
+        <div class="tl-head">
+          <h3>Quality Assurance Freelance</h3>
+          <span class="tl-when">November 2025 - March 2026</span>
+        </div>
+        <p class="tl-org">PT. LinkIT360</p>
+        <ul>
+          <li>Developed 300+ test cases and test scenarios in Jira, covering key user flows and edge cases to support structured, repeatable testing.</li>
+          <li>Performed end-to-end manual testing on 12+ applications used by national and international users across an international telecommunications 
+            company, validating functionality, usability, and overall quality.</li>
+          <li>Collaborated closely with Business Analysts and Developers to clarify requirements, report defects, and ensure timely resolution before release.</li>
+        </ul>
+      </article>
+
+      <article class="tl-item" data-reveal>
+        <div class="tl-head">
+          <h3>Digital Platform &amp; Public Services Intern</h3>
+          <span class="tl-when">September - October 2025</span>
+        </div>
+        <p class="tl-org">PT. Bank Rakyat Indonesia (Persero) Tbk</p>
+        <ul>
+          <li>Analyzed merchant transaction data across 25+ provinces in Indonesia to identify trends, patterns, key business
+            insights, and prepared comprehensive Minutes of Meeting (MoM) to support business decision.</li>
+          <li>Created presentation decks and designed promotional materials for various events and programs.</li>
+        </ul>
+      </article>
+
+      <article class="tl-item" data-reveal>
+        <div class="tl-head">
+          <h3>UI/UX Designer Intern</h3>
+          <span class="tl-when">February - August 2025</span>
+        </div>
+        <p class="tl-org">PT. Ukirama Solusi Indonesia ·
+          <a href="https://www.linkedin.com/posts/ukirama_growth-starts-here-even-as-an-intern-activity-7358742626302373888-v0ZE?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy" target="_blank" rel="noopener">Internship Highlight</a>
+        </p>
+        <ul>
+          <li>Designed 15+ pages for the Ukirama website and 2 ERP feature modules, creating consistent, intuitive, and user-
+            friendly interfaces across both web and enterprise products while aligning designs with user requirements.</li>
+          <li>Developed detailed wireframes for the Sanity CMS page builder, covering 18+ reusable UI components and defining
+            flexible layouts and interactions to support scalable and efficient page creation.</li>
+          <li>Conducted 20+ User Acceptance Tests (UAT) across ERP and website features to validate functionality against
+            business requirements, identify usability and functional issues.</li>
+          <li>Contributed to the development of a design system for the website by auditing existing UI elements, components,
+            and color usage, then collaborating with the team to standardize which to keep.</li>
+        </ul>
+      </article>
+
+      <article class="tl-item" data-reveal>
+        <div class="tl-head">
+          <h3>UI/UX Beginner Mentor</h3>
+          <span class="tl-when">September - December 2024</span>
+        </div>
+        <p class="tl-org">Kelompok Studi Mahasiswa Android</p>
+        <ul>
+          <li>Provided guidance on design development and prototyping with Figma through 10 meetings.</li>
+          <li>Evaluated three team projects in accordance with competition proposal guidelines.</li>
+          <li>Facilitated brainstorming sessions to encourage creativity and collaboration among team members.</li>
+        </ul>
+      </article>
+
+      <article class="tl-item" data-reveal>
+        <div class="tl-head">
+          <h3>Liaison Officer — Independent Student Exchange Programme</h3>
+          <span class="tl-when">January - June 2024</span>
+        </div>
+        <p class="tl-org">Universitas Pembangunan Nasional "Veteran" Jakarta</p>
+        <ul>
+          <li>Assisting the lecturer in implementing the Nusantara Module for 24 exchange students.</li>
+          <li>Ensuring technical preparations for the execution of 16 activities in the Nusantara Module.</li>
+        </ul>
+      </article>
+
+      <article class="tl-item" data-reveal>
+        <div class="tl-head">
+          <h3>Web Basic Mentor</h3>
+          <span class="tl-when">September - December 2023</span>
+        </div>
+        <p class="tl-org">Kelompok Studi Mahasiswa Android</p>
+        <ul>
+          <li>Teach the basics of using HTML, CSS, and JavaScript to create a simple website with 10 meetings.</li>
+          <li>Evaluate 38 mini and final projects and provide feedback.</li>
+        </ul>
+      </article>
+
+      <article class="tl-item" data-reveal>
+        <div class="tl-head">
+          <h3>System Analyst for "Dignition" LMS</h3>
+          <span class="tl-when">May - October 2023</span>
+        </div>
+        <p class="tl-org">Kelompok Studi Mahasiswa Android</p>
+        <ul>
+          <li>Examine the operation of an application system.</li>
+          <li>Gather feedback from stakeholders and end-users regarding system performance and usability.</li>
+          <li>Create user flows, ERDs, use cases, 3 information architectures, and 21 narratives for activity diagrams and sequence diagrams.</li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- ORGANISATIONAL -->
+    <div class="timeline" data-panel="org" hidden>
+
+      <article class="tl-item" data-reveal>
+        <div class="tl-head">
+          <h3>Head of Academic Division</h3>
+          <span class="tl-when">January - December 2024</span>
+        </div>
+        <p class="tl-org">Kelompok Studi Mahasiswa Android</p>
+        <ul>
+          <li>Ran the academic operations of KSM Android for the year.</li>
+          <li>Developing, maintaining, and designing 5 learning modules and 12 study club curriculum.</li>
+          <li>Organizing 2 IT events for the public with 120 participants for each event.</li>
+        </ul>
+      </article>
+
+      <article class="tl-item" data-reveal>
+        <div class="tl-head">
+          <h3>Staff of Arts &amp; Sports Division</h3>
+          <span class="tl-when">January - December 2023</span>
+        </div>
+        <p class="tl-org">Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer</p>
+        <ul>
+          <li>Became the project officer of the computer science faculty sports and arts competition (POS FIK) 
+            which was attended by 232 participants from 5 competition.</li>
+          <li>Coordinated five FIK sports clubs, managing a total of 36 training sessions and achieving five sports accolades.</li>
+        </ul>
+      </article>
+
+      <article class="tl-item" data-reveal>
+        <div class="tl-head">
+          <h3>Event &amp; Programme Staff FIK FAIR 2023</h3>
+          <span class="tl-when">March - November 2023</span>
+        </div>
+        <p class="tl-org">Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer</p>
+        <ul>
+          <li>Led the poster design for a national competition event with 44 participants from 8 provinces.</li>
+          <li>Developed a competition guidebook and Terms of Reference for 3 judges.
+        </ul>
+      </article>
+
+      <article class="tl-item" data-reveal>
+        <div class="tl-head">
+          <h3>Team Leader of Learning Ammo Web Basic Module</h3>
+          <span class="tl-when">February - October 2023</span>
+        </div>
+        <p class="tl-org">Kelompok Studi Mahasiswa Android</p>
+        <ul>
+          <li>Coordinated the development of 9 chapters of a basic web module.</li>
+          <li>Facilitated a focus group discussion with 4 reviewers to validate the relevance and accuracy of the module content.</li>
+          <li>Leading the development of modules to follow the schedule.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Achievements -->
+<section class="section" id="achievements">
+  <div class="wrap">
+    <div class="section-head">
+      <div data-reveal>
+        <p class="eyebrow">Achievements</p>
+        <h2 class="h2">Awards and certifications</h2>
+      </div>
+    </div>
+
+    <div class="awards">
+      <article class="award" data-reveal>
+        <span class="idx">01</span>
+        <div>
+          <h3>Best Mobile App Design - VWO 2024 (Vocational Worldwide Olympiad)</h3>
+          <p>International. Competed against 18 teams from 3 countries.</p>
+          <!-- → <a class="link" href="case/move.html">MOVE case study</a> -->
+        </div>
+        <span class="when">October 2024</span>
+      </article>
+
+      <article class="award" data-reveal>
+        <span class="idx">02</span>
+        <div>
+          <h3>Second Place - Mobile UI/UX Competition (MUC) 2024</h3>
+          <p>National. Competed against 122 teams from 13 provinces.</p>
+          <!-- → <a class="link" href="case/nobarin.html">Nobarin case study</a> -->
+        </div>
+        <span class="when">April 2024</span>
+      </article>
+
+      <article class="award" data-reveal>
+        <span class="idx">03</span>
+        <div>
+          <h3>Finalist - Technotainment 2024</h3>
+          <p>Top 5 UI/UX finalist among 38 teams from 18 universities.</p>
+          <!-- → <a class="link" href="case/jelajah.html">Jelajah case study</a> -->
+        </div>
+        <span class="when">November 2024</span>
+      </article>
+
+      <article class="award" data-reveal>
+        <span class="idx">04</span>
+        <div>
+          <h3>Finalist - Online Scholarship Competition</h3>
+          <p>Top 70 finalists in the scholarship competition organised by Medcom.id.</p>
+        </div>
+        <span class="when">December 2021</span>
+      </article>
+    </div>
+
+    <h3 class="h3" style="margin:clamp(3rem,6vw,4.5rem) 0 1.4rem" data-reveal>Certification</h3>
+    <div class="certs" data-reveal>
+      <article class="cert">
+        <h4>System Analyst Competency Certification</h4>
+        <p class="issuer">BNSP · Feb 2026</p>
+        <span class="mono muted">National professional certification</span>
+      </article>
+      <article class="cert">
+        <h4>Data Classification &amp; Summarization Using IBM Granite</h4>
+        <p class="issuer">IBM SkillsBuild · Aug 2025</p>
+        <span class="mono">ID <a href="https://www.credly.com/badges/eb6a92da-c7a4-4e30-b861-6ff60ceb4fc5" target="_blank" rel="noopener">eb6a92da…ceb4fc5</a></span>
+      </article>
+      <article class="cert">
+        <h4>IT Specialist in Data Analytics</h4>
+        <p class="issuer">Certiport · Dec 2024</p>
+        <span class="mono">ID <a href="https://www.certiport.com/portal/pages/credentialverification.aspx" target="_blank" rel="noopener">ewAM-4wvD</a></span>
+      </article>
+      <article class="cert">
+        <h4>Belajar Dasar Data Science</h4>
+        <p class="issuer">Dicoding · Feb - Mar 2024</p>
+        <span class="mono">ID <a href="https://www.dicoding.com/certificates/MEPJY8W3WP3V" target="_blank" rel="noopener">MEPJY8W3WP3V</a></span>
+      </article>
+      <article class="cert">
+        <h4>Algorithm &amp; Data Structures with Python</h4>
+        <p class="issuer">Skilvul · Mar 2024</p>
+        <span class="mono">ID <a href="https://badgr.com/public/assertions/yP7gzezDQoGyMBYWYLjNbA?identity__email=salsabillahfebridha@gmail.com" target="_blank" rel="noopener">yP7gzezDQoGyMBYWYLjNbA</a></span>
+      </article>
+      <article class="cert">
+        <h4>Python Lanjutan</h4>
+        <p class="issuer">Skilvul · Mar 2024</p>
+        <span class="mono">ID <a href="https://badgr.com/public/assertions/MzIiBSTDSLOgK1vFbdX2gQ?identity__email=salsabillahfebridha@gmail.com" target="_blank" rel="noopener">MzIiBSTDSLOgK1vFbdX2gQ</a></span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <div data-reveal>
+        <p class="eyebrow">Skills</p>
+        <h2 class="h2">Tools and skills I work with</h2>
+      </div>
+    </div>
+
+    <div class="skill-block" data-reveal>
+      <h3>Design</h3>
+      <div class="tools">
+        <span class="tool"><img src="img/assets/figma.png" alt="" loading="lazy">Figma</span>
+        <span class="tool"><img src="img/assets/claude.png" alt="" loading="lazy">Claude Design</span>
+        <span class="tool no-icon">Maze</span>
+        <span class="tool no-icon">Attention Insight</span>
+        <span class="tool"><img src="img/assets/canva.png" alt="" loading="lazy">Canva</span>
+        <span class="tool"><img src="img/assets/notion.png" alt="" loading="lazy">Notion</span>
+        <span class="tool"><img src="img/assets/draw.io.png" alt="" loading="lazy">Draw.io</span>
+        <span class="tool"><img src="img/assets/staruml.png" alt="" loading="lazy">StarUML / UML</span>
+      </div>
+      <ul class="softskills" style="margin-top:.9rem">
+        <li>User Research</li><li>Wireframing</li><li>Prototyping</li><li>Design Systems</li>
+        <li>Design Tokens</li><li>Usability Testing</li><li>Design Scenarios</li><li>Design Consistency</li>
+        <li>Interaction Design</li><li>Design Thinking</li><li>Design Critique</li>
+      </ul>
+    </div>
+
+    <div class="skill-block" data-reveal>
+      <h3>Quality assurance</h3>
+      <div class="tools">
+        <span class="tool"><img src="img/assets/jira.svg" alt="" loading="lazy">Jira</span>
+        <span class="tool"><img src="img/assets/lark.png" alt="" loading="lazy">Lark</span>
+        <span class="tool no-icon">Test Case Design</span>
+        <span class="tool no-icon">Manual &amp; E2E Testing</span>
+        <span class="tool no-icon">UAT</span>
+      </div>
+    </div>
+
+    <div class="skill-block" data-reveal>
+      <h3>Front-end &amp; engineering</h3>
+      <div class="tools">
+        <span class="tool"><img src="img/assets/html.png" alt="" loading="lazy">HTML</span>
+        <span class="tool"><img src="img/assets/css.png" alt="" loading="lazy">CSS</span>
+        <span class="tool"><img src="img/assets/javascript.png" alt="" loading="lazy">JavaScript</span>
+        <span class="tool"><img src="img/assets/reactjs.png" alt="" loading="lazy">React.js</span>
+        <span class="tool"><img src="img/assets/php.png" alt="" loading="lazy">PHP</span>
+        <span class="tool"><img src="img/assets/mysql.png" alt="" loading="lazy">MySQL</span>
+        <span class="tool"><img src="img/assets/java.png" alt="" loading="lazy">Java</span>
+        <span class="tool"><img src="img/assets/laravel.webp" alt="" loading="lazy">Laravel</span>
+        <span class="tool"><img src="img/assets/postman.webp" alt="" loading="lazy">Postman</span>
+        <span class="tool"><img src="img/assets/prisma.png" alt="" loading="lazy">Prisma</span>
+        <span class="tool"><img src="img/assets/VSC.png" alt="" loading="lazy">VS Code</span>
+        <span class="tool"><img src="img/assets/github.png" alt="" loading="lazy">GitHub</span>
+        <span class="tool"><img src="img/assets/gitlab.png" alt="" loading="lazy">GitLab</span>
+      </div>
+    </div>
+
+    <div class="skill-block" data-reveal>
+      <h3>Data &amp; analysis</h3>
+      <div class="tools">
+        <span class="tool"><img src="img/assets/Python.png" alt="" loading="lazy">Python</span>
+        <span class="tool"><img src="img/assets/anaconda.png" alt="" loading="lazy">Anaconda</span>
+        <span class="tool"><img src="img/assets/gcolab.png" alt="" loading="lazy">Google Colab</span>
+        <span class="tool"><img src="img/assets/jupyter.png" alt="" loading="lazy">Jupyter</span>
+        <span class="tool"><img src="img/assets/streamlit.png" alt="" loading="lazy">Streamlit</span>
+        <span class="tool"><img src="img/assets/pentaho.png" alt="" loading="lazy">Pentaho</span>
+        <span class="tool"><img src="img/assets/msoffice.png" alt="" loading="lazy">Microsoft Office</span>
+        <span class="tool"><img src="img/assets/google.png" alt="" loading="lazy">Google Workspace</span>
+      </div>
+    </div>
+
+    <div class="skill-block" data-reveal>
+      <h3>Soft skills</h3>
+      <ul class="softskills">
+        <li>Communication</li><li>Leadership</li><li>Teamwork</li><li>Problem Solving</li>
+        <li>Time Management</li><li>Public Speaking</li><li>Project Management</li><li>Analytical Thinking</li>
+      </ul>
+    </div>
+
+    <div class="skill-block" data-reveal>
+      <h3>In the room</h3>
+      <p class="muted" style="margin-bottom:1.2rem;font-size:.9rem">Mentoring, moderating, MC-ing and running events.</p>
+      <div class="rail">
+        <img src="img/pict/tfs1.JPG" alt="Speaking at TFS" loading="lazy">
+        <img src="img/pict/pkkmb.JPG" alt="Moderating PKKMB" loading="lazy">
+        <img src="img/pict/sayonara.JPG" alt="MC at Sayonara" loading="lazy">
+        <img src="img/pict/pascal1.JPG" alt="Speaking at Pascal" loading="lazy">
+        <img src="img/pict/tfs2.JPG" alt="TFS session" loading="lazy">
+        <img src="img/pict/stuban.JPG" alt="Comparative study visit" loading="lazy">
+        <img src="img/pict/posfik.JPG" alt="Project officer at POS FIK" loading="lazy">
+        <img src="img/pict/senamika.JPG" alt="Senamika" loading="lazy">
+        <img src="img/pict/pkkmb1.JPG" alt="With BEM FIK" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="contact-panel" data-reveal>
+      <p class="eyebrow">Contact</p>
+      <h2 class="h2">Let's work together</h2>
+      <p class="lede">I just graduated in Information Systems and I'm looking for a UI/UX design role. 
+        If you're hiring, want to collaborate, or just want to know more about how I worked on a project, 
+        send me an email or message me on LinkedIn.</p>
+
+      <div style="margin-top:2rem;display:flex;flex-wrap:wrap;gap:.75rem;position:relative;z-index:1">
+        <a class="btn btn-primary" data-magnetic href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=salsabillahfebridha@gmail.com" target="_blank" rel="noopener">Write me an email</a>
+        <a class="btn btn-ghost" href="https://linkedin.com/in/salsabillahfebridha" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+
+      <div class="contact-list">
+        <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=salsabillahfebridha@gmail.com" target="_blank" rel="noopener">
+          <img src="img/assets/email.png" alt="" loading="lazy">
+          <span><b>Email</b><span>salsabillahfebridha@gmail.com</span></span>
+        </a>
+        <a href="https://linkedin.com/in/salsabillahfebridha" target="_blank" rel="noopener">
+          <img src="img/assets/linkedin.png" alt="" loading="lazy">
+          <span><b>LinkedIn</b><span>/in/salsabillahfebridha</span></span>
+        </a>
+        <a href="https://github.com/salsabillahfebridha" target="_blank" rel="noopener">
+          <img src="img/assets/github1.png" alt="" loading="lazy">
+          <span><b>GitHub</b><span>@salsabillahfebridha</span></span>
+        </a>
+        <a href="https://instagram.com/salsabillahfebridha" target="_blank" rel="noopener">
+          <img src="img/assets/instagram.png" alt="" loading="lazy">
+          <span><b>Instagram</b><span>@salsabillahfebridha</span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <p>© <span data-year>2026</span> Salsabillah Febridha</p>
+    <a class="to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+  </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
-
-<!-- BOOTSTRAP -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </html>
